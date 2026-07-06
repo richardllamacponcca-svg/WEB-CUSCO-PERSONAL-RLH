@@ -3,7 +3,7 @@
 $archivo_get = isset($_GET['file']) ? $_GET['file'] : '';
 // Medida de seguridad para leer solo el nombre
 $archivo_get = basename($archivo_get); 
-$ruta_archivo = __DIR__ . '/../poemas/' . $archivo_get . '.txt';
+$ruta_archivo = __DIR__ . '/poemas/' . $archivo_get . '.txt';
 
 // Si el archivo no existe, mostramos error
 if (empty($archivo_get) || !file_exists($ruta_archivo)) {
